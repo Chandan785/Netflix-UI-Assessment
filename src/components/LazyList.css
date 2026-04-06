@@ -1,0 +1,44 @@
+.lazy-list-container {
+  padding: 20px 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .lazy-list-container {
+    padding: 20px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.end-of-list {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px;
+  font-weight: 500;
+}
+
+.list-error {
+  color: var(--accent-color);
+  text-align: center;
+  padding: 40px;
+  background: rgba(229, 9, 20, 0.1);
+  border-radius: 8px;
+  margin: 20px 40px;
+}
