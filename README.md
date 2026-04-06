@@ -1,18 +1,72 @@
-# React + Vite
+# Netflix UI Assessment
 
-## Live Demo
+A Netflix-style media application built with React.js and Vite. This application features a modern, responsive UI with smooth animations, robust authentication, and offline support via Progressive Web App (PWA) capabilities.
 
-- https://netflix-ui-assessment.vercel.app
+## 🚀 Live Demo
 
-Currently, two official plugins are available:
+[https://netflix-ui-assessment.vercel.app](https://netflix-ui-assessment.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Modern UI/UX:** Netflix-inspired design with premium aesthetics, smooth transitions, and dynamic micro-animations.
+- **Media Previews:** Interactive movie preview modals.
+- **User Authentication:** Secure login and registration flow powered by Firebase.
+- **User Profiles & Watchlist:** Personalized user experiences including saved media.
+- **Progressive Web App (PWA):** Offline support and native-like installable app experience using Service Workers.
+- **Performant & Responsive:** Optimized for various screen sizes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend Framework:** React 19 + Vite
+- **Styling:** CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Backend & Auth:** Firebase
+- **Routing:** React Router v7
+- **PWA Integration:** `vite-plugin-pwa`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started
+
+### Prerequisites
+
+Ensure you have Node.js (v18 or higher recommended) and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository and navigate to the project directory:
+   ```bash
+   git clone <your-repo-url>
+   cd "Netflix UI Assessment"
+   ```
+
+2. Install the project dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Add your Firebase Configuration (if applicable) in your `.env` variables before running.
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173`.
+
+### Build for Production
+
+To build the project for production, run:
+
+```bash
+npm run build
+```
+
+This will generate a `dist` directory with the optimized production build. You can preview the production build locally with:
+
+```bash
+npm run preview
+```
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
